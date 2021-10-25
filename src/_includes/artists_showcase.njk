@@ -1,0 +1,20 @@
+<section id="artists">
+  {%- for artist in collections.artists -%}
+  <div class="artist_sign">
+    <h3 class="artist_sign_title">
+      {{ artist.data.title }}
+    </h3>
+    {% if artist.data.assets %}
+    <div class="artist_sign_assets">
+    should be rendered only if we have some assets
+    </div>
+    {% endif %}
+    <div class="artist_sign_content">
+      {{ artist.templateContent | safe }}
+    </div>
+    <div class="artist_sign_link">
+      {{ artist.data.link }}
+    </div>
+  </div>
+  {%- endfor -%}
+</section>
