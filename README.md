@@ -17,6 +17,8 @@ copy repo
 git clone git@github.com:algorave-ru/website.git
 ```
 
+start project
+
 ```
 yarn install
 yarn dev
