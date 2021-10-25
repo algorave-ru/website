@@ -3,9 +3,23 @@ Website for algorave.ru based on 11ty SSG
 
 ## Run locally
 
-```
-yarn dev
+Install Node and npm
 
+Install yarn
+
+```
+npm install -g yarn
+```
+
+copy repo
+
+```
+git clone git@github.com:algorave-ru/website.git
+```
+
+```
+yarn install
+yarn dev
 ```
 
 ## Build project
