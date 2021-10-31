@@ -1,9 +1,9 @@
 <section id="artists">
   {%- for artist in collections.artists -%}
   <div class="artist_sign">
-    <h3 class="artist_sign_title">
+    <a href={{ artist.url}} class="artist_sign_title">
       {{ artist.data.title }}
-    </h3>
+    </a>
     {% if artist.data.assets %}
     <div class="artist_sign_assets">
     should be rendered only if we have some assets
