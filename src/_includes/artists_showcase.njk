@@ -2,7 +2,7 @@
   {%- for artist in collections.artists -%}
   <div class="artist_sign">
     <a href={{ artist.url}} class="artist_sign_title">
-      {{ artist.data.title }}
+      <h3>{{ artist.data.title }}</h3>
     </a>
     {% if artist.data.assets %}
     <div class="artist_sign_assets">
@@ -13,7 +13,7 @@
       {{ artist.templateContent | safe }}
     </div>
     <div class="artist_sign_link">
-      {{ artist.data.link }}
+      <a href={{ artist.data.link }}>{{artist.data.link}}</a>
     </div>
   </div>
   {%- endfor -%}
