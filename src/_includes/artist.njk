@@ -1,0 +1,10 @@
+<article class="artist">
+  <h1 class="artist_title">{{ title }}</h1>
+  {% if assets %}
+  <div class="artist_sign_assets">
+    should be rendered only if we have some assets
+  </div>
+  {% endif %}
+  <p class="artist_bio">{{ bio }}</p>
+  <span class="artist_link">{{ link }}</span>
+</article>
